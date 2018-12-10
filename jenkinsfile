@@ -18,8 +18,7 @@ pipeline
 			}
 			steps
 			{
-				sh "echo 'Hello World'"
-				sh "env"
+				echo "Hello World"
 			}
 			post
 			{
