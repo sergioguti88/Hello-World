@@ -3,7 +3,7 @@ pipeline
     agent 
 	{
         node 
-		{
+	{
             label 'slave-azure' 
         }
     }
@@ -12,13 +12,9 @@ pipeline
 	{
 		stage ('HelloWorld') 
 		{
-			agent
-			{
-			  docker { image 'jtoledog/compiladorjs' }
-			}
 			steps
 			{
-				echo "'Hello World'"
+				echo 'Hello World'
 			}
 			post
 			{
